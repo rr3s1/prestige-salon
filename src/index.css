@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: radial-gradient(ellipse at center, #0a0a0a 0%, #000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    opacity: 0;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 6vw, 5rem);
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #d4af37, #fff, #d4af37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive adjustments for hero title */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 0.25em;
+    }
+}
+
+.hero-subtitle {
+    font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    opacity: 1;
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(2px);
+}
+
+/* Responsive adjustments for hero subtitle */
+@media (max-width: 640px) {
+    .hero-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 0.15em;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 0.18em;
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid #d4af37;
+    border-radius: 2rem;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Make button smaller on small screens */
+@media (max-width: 768px) {
+    .cta-button {
+        padding: 0.5rem 1.25rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+    }
+}
+
+.cta-button:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-text {
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.navbar-item {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.header-logo {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #d4af37, #fff, #d4af37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

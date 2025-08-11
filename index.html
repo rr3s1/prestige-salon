@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prestige HairStyle Salon - Premium hair cutting, styling, and grooming services in Wembley. Expert barbers offering precision cuts, beard sculpting, and luxury treatments. Book your appointment today." />
+    <meta name="keywords" content="hair salon, barber, haircut, beard, styling, grooming, Wembley, premium, luxury" />
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <title>Prestige Hair Salon - Premium Hair & Grooming Services in Wembley</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Prestige Hair Salon - Premium Hair & Grooming Services" />
+    <meta property="og:description" content="Experience timeless luxury and modern innovation at Prestige Hair Salon. Expert barbers, precision cuts, and premium grooming services in Wembley." />
+    <meta property="og:image" content="/og-preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prestige-salon.vercel.app" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prestige Hair Salon - Premium Hair & Grooming Services" />
+    <meta name="twitter:description" content="Experience timeless luxury and modern innovation at Prestige Hair Salon." />
+    <meta name="twitter:image" content="/og-preview.png" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Prestige Hair Salon",
+      "description": "Premium hair cutting, styling, and grooming services",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "214-216 Preston Rd",
+        "addressLocality": "Wembley",
+        "postalCode": "HA9 8PB",
+        "addressCountry": "GB"
+      },
+      "telephone": "07931 096862",
+      "openingHours": [
+        "Mo-Fr 09:00-19:00",
+        "Sa 08:00-18:00", 
+        "Su 10:00-17:00"
+      ],
+      "priceRange": "££",
+      "image": "/og-preview.png",
+      "url": "https://Prestige-salon.vercel.app"
+    }
+    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/hero-poster.webp" as="image" />
+    <link rel="preload" href="/HeroPrestige.webm" as="video" type="video/webm" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+    <link rel="dns-prefetch" href="//prod.spline.design" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
