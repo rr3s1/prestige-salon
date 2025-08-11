@@ -80,6 +80,15 @@ npm install
 
 ### Environment Setup
 
+A. Method 1
+Run 'npx convex dev --once' to start the Convex development server.
+
+Run 'npx convex run seed:seedAll' to seed the database. 
+
+// OR //
+
+B. Method 2
+
 Create a `.env.local` file in the root directory and add your environment variables:
 
 ```bash
