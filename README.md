@@ -1,4 +1,5 @@
-<img src="https://github.com/user-attachments/assets/59a2cf58-bc15-41e3-8b36-97ec278fc455" /> <br/>  <br/>  <h1 align="center "><a href="#" target="_blank">Prestige Barber Salon</a></h1> <br/><p align="center">A premium barber salon landing page designed to streamline appointment booking, marketing of services and client testimonials using <b>React 19</b>, <b>Spline 3D</b> and <b>GSAP Animations</b>. </p></div>
+<img width="2525" height="1212" alt="image" src="https://github.com/user-attachments/assets/e5791ca5-e9dc-42a0-b698-79a35a2096d7" />
+ <br/>  <br/>  <h1 align="center "><a href="#" target="_blank">Prestige Barber Salon</a></h1> <br/><p align="center">A premium barber salon landing page designed to streamline appointment booking, marketing of services and client testimonials using <b>React 19</b>, <b>Spline 3D</b> and <b>GSAP Animations</b>. </p></div>
 
 ## 📦 Table of Contents
 
@@ -11,7 +12,6 @@
 7. [Core Technologies](#core-technologies)   
 8. [Acknowledgments](#acknowledgments)  
 9. [License](#license)
-10. [Screenshots](#screenshots)
 
 ---
 
@@ -194,6 +194,7 @@ Open http://localhost:5173 in your browser – the app will hot-reload on change
 ## 8. 🙏Acknowledgments <a id="acknowledgments"></a>
 
 Built with inspiration from:
+- Adrian Hajdin's JavaScript Mastery community [JavaScript Mastery](https://www.youtube.com/c/JavaScriptMastery)
 - The React community for cutting-edge development patterns
 - Convex team for revolutionary real-time backend solutions
 - Spline community for accessible 3D web experiences
@@ -209,10 +210,3 @@ MIT License - see LICENSE.md for details.
 
 <br /><br />
 
-## 10. 📸 Screenshots <a id="screenshots"></a>
-
-![image](https://github.com/user-attachments/assets/9d8fb39d-f412-4a08-9621-06e55b9d2eff)
-![image](https://github.com/user-attachments/assets/8a934eae-ab19-4250-94de-214362cf657d)
-![image](https://github.com/user-attachments/assets/614b3a40-8340-4f6d-af3b-6957823ab71f)
-![image](https://github.com/user-attachments/assets/5ae92d28-1583-40c2-b2e0-63cf7873f94f)
-![image](https://github.com/user-attachments/assets/0577f8ba-d2ab-4733-ae89-2
