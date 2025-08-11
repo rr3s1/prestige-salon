@@ -1,5 +1,17 @@
 <img width="2525" height="1212" alt="image" src="https://github.com/user-attachments/assets/e5791ca5-e9dc-42a0-b698-79a35a2096d7" />
- <br/>  <br/>  <h1 align="center "><a href="#" target="_blank">Prestige Barber Salon</a></h1> <br/><p align="center">A premium barber salon landing page designed to streamline appointment booking, marketing of services and client testimonials using <b>React 19</b>, <b>Spline 3D</b> and <b>GSAP Animations</b>. </p></div>
+ <br/>  <br/>  <h1 align="center "><a href="#" target="_blank">Prestige Barber Salon</a>
+ <p align="center">
+
+[![Live Demo](https://img.shields.io/badge/_Live_Demo-1E0C3D?style=for-the-badge&logo=react&logoColor=white)](https://prestige-salon.vercel.app/)
+
+</p>
+ </h1>
+ 
+
+<br/><p align="center">A premium barber salon landing page designed to streamline appointment booking, marketing of services and client testimonials using <b>React 19</b>, <b>Spline 3D</b> and <b>GSAP Animations</b>. </p></div>
+
+
+
 
 ## 📦 Table of Contents
 
