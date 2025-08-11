@@ -74,11 +74,11 @@ export function SplineScene() {
         <div className="text-center px-6">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-amber-200 via-orange-300 to-amber-400 bg-clip-text text-transparent">
-              Where luxury meets 
+              Preocupied to help shine 
             </span>
             <br />
             <span className="text-white/90">
-               timeless craftsmanship 
+                any light on you 
             </span>
           </h1>
           <div className="mt-4 h-1 w-24 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto rounded-full"></div>
