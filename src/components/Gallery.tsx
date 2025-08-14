@@ -1,41 +1,39 @@
-import { useState, lazy, Suspense } from "react";
-
-const LazyImage = lazy(() => import('../utils/LazyImage'));
+import { useState } from "react";
 
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    src: "/gallery-1.webp",
     category: "haircut",
     title: "Precision Cut"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    src: "/gallery-2.webp",
     category: "beard",
     title: "Beard Sculpting"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    src: "/gallery-3.webp",
     category: "styling",
     title: "Classic Style"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    src: "/gallery-4.webp",
     category: "salon",
     title: "Our Space"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    src: "/gallery-5.webp",
     category: "haircut",
     title: "Modern Cut"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    src: "/gallery-6.webp",
     category: "beard",
     title: "Beard Design"
   }
@@ -98,6 +96,9 @@ export function Gallery() {
               <img
                 src={image.src}
                 alt={image.title}
+                loading="lazy"
+                width={800}
+                height={800}
                 className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -124,8 +125,11 @@ export function Gallery() {
               <h4 className="text-xl font-semibold text-gray-300 mb-4">BEFORE</h4>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/before.webp"
                   alt="Before transformation"
+                  loading="lazy"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover filter grayscale"
                 />
               </div>
@@ -134,8 +138,11 @@ export function Gallery() {
               <h4 className="text-xl font-semibold text-amber-600 mb-4">AFTER</h4>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/gallery-1.webp"
                   alt="After transformation"
+                  loading="lazy"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -154,6 +161,8 @@ export function Gallery() {
             <img
               src={galleryImages.find(img => img.id === selectedImage)?.src}
               alt="Enlarged view"
+              width={1200}
+              height={1200}
               className="max-w-full max-h-full object-contain"
             />
             <button

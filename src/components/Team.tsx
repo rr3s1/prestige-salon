@@ -28,13 +28,16 @@ export function Team() {
                 {/* 3. Changed placeholder background to light gray */}
                 <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
                   <img
-                    src={barber.imageUrl || `https://images.unsplash.com/photo-${
-                      index === 0 ? '1507003211169-0a1dd7228f2d' : 
-                      index === 1 ? '1472099645785-5658abf4ff4e' : 
-                      '1566492031773-4f4e44671d66'
-                    }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`}
+                    src={barber.imageUrl || '/team-placeholder.webp'}
                     alt={barber.name}
+                    loading="lazy"
+                    width={800}
+                    height={800}
                     className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      console.error(`Failed to load image: ${barber.imageUrl} for ${barber.name}`);
+                      e.currentTarget.src = '/team-placeholder.webp';
+                    }}
                   />
                 </div>
                 {/* Removed dark gradient overlay which is not suitable for a light theme */}

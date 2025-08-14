@@ -91,8 +91,11 @@ export function Philosophy() {
             className="aspect-w-4 aspect-h-5 rounded-lg overflow-hidden shadow-luxury"
           >
             <img
-              src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              src="/philosophy.webp"
               alt="Barber at work"
+              loading="lazy"
+              width={1000}
+              height={1250}
               className="w-full h-full object-cover filter grayscale"
             />
           </div>

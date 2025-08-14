@@ -83,6 +83,7 @@ export const seedAll = mutation({
         specialties: ["Classic Cuts", "Beard Sculpting", "Straight Razor"],
         experience: 15,
         featured: true,
+        imageUrl: "/MarcusR.webp",
       },
       {
         name: "James Chen",
@@ -91,6 +92,7 @@ export const seedAll = mutation({
         specialties: ["Modern Cuts", "Fades", "Hair Styling"],
         experience: 8,
         featured: true,
+        imageUrl: "/JamesC.webp",
       },
       {
         name: "Antonia Silva",
@@ -99,7 +101,7 @@ export const seedAll = mutation({
         specialties: ["Creative Styling", "Color Consultation", "Texture Treatments"],
         experience: 12,
         featured: true,
-        imageUrl: "/AntoniaS.png",
+        imageUrl: "/AntoniaS.webp",
       },
     ];
 
