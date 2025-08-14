@@ -80,8 +80,8 @@ Make sure you have the following installed:
 ###  Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/prestige-barber-salon.git
-cd prestige-barber-salon
+git clone https://github.com/your-username/prestige-salon.git
+cd prestige-salon
 ```
 
 ### Install Dependencies
