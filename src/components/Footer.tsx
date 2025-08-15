@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {/* Brand Section */}
           <div className="md:col-span-1">
-            <h3 className="text-3xl font-light tracking-wide mb-6">
+            <h3 className="header-logo text-3xl mb-6">
               PRESTIGE
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed mb-8 max-w-sm">
